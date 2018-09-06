@@ -6,9 +6,9 @@ Since Go compiles to native code, I would expect similar performance to C.
 
 **Testing Methodology**
 
-The testing process involves creating a server thread/routine, which listens for incoming packets and then echos them back to the sender. 
+The testing process involves creating a server thread/routine, which listens for incoming UDP packets and then echos them back to the sender. 
 The timing period is from prior to the client send, to after the client receive of the echo'd packet. All traffic is on localhost, so no
-physical transmission occurs.
+physical transmission occurs. Only UDP is tested, but it is expected to see similar performance with TCP, as it is the same number of system calls.
 
 The tests use 'go bench' for Go, 'jmh' for Java, and internally timed for C.
 
