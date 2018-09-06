@@ -20,8 +20,8 @@ The LLVM used -O3 compilation (also tested with -O2 with no change in performanc
 
 After timing multiple runs, the Go and Java showed a high degree of variance.
 
-1. Go 32-33 usecs
-2. Java 33-34 usecs
-3. C 29-30 usecs
+* Go, 32-33 usecs
+* Java, 33-34 usecs
+* C, 29-30 usecs
 
 The Go and Java versions show very similar performance, with each being about 10% slower than the C version.
